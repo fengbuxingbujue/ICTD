@@ -1,5 +1,5 @@
-# CTFD
-Pytorch Implementation of "[CTFD: Integrating CNN and Transformer with Diffusion Models for Robust Image Deblurring and Denoising](https://arxiv.org/abs/2204.04627)"
+# ICTD
+Pytorch Implementation of "ICTD: Integrating CNN and Transformer with Diffusion Models for Robust Image Deblurring and Denoising"
 
 <img src="./figure/OverrallFarme.png" width = "800" height = "400" div align=center />
 
@@ -14,3 +14,20 @@ Use the "trainer_onRealBlur.py" file when testing the RealBlur datasets
 
 ## Requirements
 The model requires the following additional data bags
+
+## Training
+First, open: </br>
+conf.yml </br>
+Then modify the training parameters: change the MODE parameter to 1, point PATH_GT and PATH_IMG parameters to the location where the data set is saved. </br>
+If there is a pretraining parameter, change the CONTINUE_TRAINING parameter to True, and then change the PRETRAINED_PATH_INITIAL_PREDICTOR and PRETRAINED_PATH_DENOISER parameters to the pretraining model save path. After the modification is complete, run: </br>
+main.py
+
+## Testing
+First, open: </br>
+conf.yml </br>
+Then modify the training parameters: change the MODE parameter to 0, point TEST_PATH_GT and TEST_PATH_IMG parameters to the location where the data set is saved. At the same time, make sure that TEST_INITIAL_PREDICTOR_WEIGHT_PATH and TEST_DENOISER_WEIGHT_PATH two parameters point to the desired training model result</br>
+After the modification is complete, run: </br>
+main.py
+
+## Statement
+We are trying to put our paper ICTD: Integrating CNN and Transformer with Diffusion Models for Robust Image Deblurring and Denoising Submission is at The Visual Computer journal.
