@@ -34,3 +34,6 @@ We will upload our pre-trained model parameters GoPro-Noisy Dateset later.
 
 ## Statement
 We are trying to put our paper ICTD: Integrating CNN and Transformer with Diffusion Models for Robust Image Deblurring and Denoising Submission is at The Visual Computer journal.
+
+## DeNet
+We will expose the code for our DeNet model in a new project page.
