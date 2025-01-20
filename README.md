@@ -29,5 +29,8 @@ Then modify the training parameters: change the MODE parameter to 0, point TEST_
 After the modification is complete, run: </br>
 main.py
 
+## Pre-trained Models
+We will upload our pre-trained model parameters later.
+
 ## Statement
 We are trying to put our paper ICTD: Integrating CNN and Transformer with Diffusion Models for Robust Image Deblurring and Denoising Submission is at The Visual Computer journal.
